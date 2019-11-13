@@ -1,0 +1,28 @@
+/*.manager {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10px;
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #3498db;
+
+    &:hover {
+      color: $notification-color;
+      background-color: dark;
+    } 
+
+    span {
+      padding-left: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  h3 {
+    color: $sidebar-item-color;
+  }
+} */

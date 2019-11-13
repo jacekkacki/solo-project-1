@@ -1,0 +1,120 @@
+.general-statistic {
+  margin-top: 60px;
+  margin-left: 270px;
+  margin-right: 20px;
+  width: calc(100% - 290px);
+  background-color: $light-color;
+}
+
+.general-statistic .page-title h2 {
+  margin: 20px 0 0 20px;
+  padding-top: 20px;
+}
+
+.general-statistic .gs-tab-one table {
+  height: 30px;
+  width: 400px;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 18px;
+  border: 1px solid;
+
+  td.forty {
+    width: 40%;
+  }
+
+  td.orange {
+    background-color: orange;
+  }
+}
+
+.general-statistic .gs-tab-two table {
+  height: 50px;
+  width: 600px;
+  border-bottom: 1px solid;
+  text-align: left;
+  margin: 30px auto;
+  font-size: 18px;
+  
+  .forty td {
+    width: 40%;
+  }
+}
+
+.general-chart {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.gs-links {
+  margin-top: 20px;
+  margin-left: 270px;
+  margin-right: 20px;
+  padding: 50px 20px;
+  width: calc(100% - 290px);
+  flex: 1;
+  background-color: $light-color;
+
+  a {
+    text-decoration: none;
+    color: $dark-color;
+  }
+
+  hr {
+    margin-bottom: 40px;
+  }
+}
+
+.button-add {
+  text-align: center;
+  margin: 30px auto;
+  color: $light-color;
+
+  a {
+    color: $light-color;
+  }
+}
+
+.flex-row {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 600px;
+  margin-left: 270px;
+  border-bottom: 1px solid;
+  align-items: center;
+
+  &:hover {
+    background-color: $basic-color;
+    transform: $transition;
+  }
+}
+
+.flex-row .link-name {
+  flex: 1;
+  max-width: 250px;
+  text-align: left;
+}
+
+.flex-row .link-addres {
+  flex: 1;
+  max-width: 250px;
+  text-align: left;
+}
+
+.flex-row .link-icons {
+  flex: 1;
+  max-width: 100px;
+  text-align: left;
+
+  img {
+    height: 16px;
+    width: 18px;
+    margin: 0 10px;
+    opacity: 1;
+  }
+
+}
+
+.center {
+  justify-items: center;
+}
