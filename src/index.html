@@ -18,16 +18,16 @@
       <section class="topbar">
         <ul>
           <li>
-            <a href="#"><img src="/images/icons/quit.svg" alt="quit"></a>
+            <a href="#"><span class="icon-quit"></span></a>
           </li>
           <li>
-            <a href="#"><img src="/images/icons/profile.svg" alt="profile"><span>Leonardo Dicaprio</span></a>
+            <a href="#"><span class="icon-profile"></span><span>Leonardo Dicaprio</span></a>
           </li>
           <li>
-            <a href="#"><img src="/images/icons/notification.svg" alt="notification"></a>
+            <a href="#" class="notification"><span class="icon-notification"></span><span class="orange-dot"></span></a>
           </li>
           <li>
-            <a href="#"><img src="/images/icons/wallet.svg" alt="wallet"><span>&#36&nbsp1,500.00</span><img src="/images/icons/arrow-down.svg" alt="arrow-down"></a>
+            <a href="#"><span class="icon-wallet"></span><span>&#36&nbsp1,500.00</span><span class="icon-arrow-down"></span></a>
           </li>
         </ul>
       </section>
@@ -37,32 +37,32 @@
       <section class="sidebar">
       <div class="flex-column">
         <div class="col-12 sidebar-menu">
-          <div class="logo hamburger">
-            <a href="#"><span><img src="/images/logo.png" alt="logo"></span></a>
-            <a href="#"><span><img src="/images/hamburger.png" alt="hamburger"></span></a>
+          <div class="sidebar-logo">
+            <a href="#"><span><img class="logo" src="/images/logo.png" alt="logo"></span></a>
+            <a href="#"><span><img class="hamburger" src="/images/hamburger.png" alt="hamburger"></span></a>
           </div>
           <div class="col-12 subpages">
             <ul>
               <li>
-                <a href="#general" class="subpages-link active"><span><img src="/images/icons/general.svg" alt="general"></span><span class="sidebar-subpages">General</span></a>
+                <a href="#general" class="sidebar-link active"><span class="icon-general"></span><span class="sidebar-subpages">General</span></a>
               </li>
               <li>
-                <a href="#details" class="sidebar-link"><span><img src="/images/icons/details.svg" alt="details"></span><span class="sidebar-subpages">Details</span></a>
+                <a href="#details" class="sidebar-link"><span class="icon-details"></span><span class="sidebar-subpages">Details</span></a>
               </li>
               <li>
-                <a href="#links" class="sidebar-link"><span><img src="/images/icons/links.svg" alt="links"></span><span class="sidebar-subpages">Links</span></a>
+                <a href="#links" class="sidebar-link"><span class="icon-links"></span><span class="sidebar-subpages">Links</span></a>
               </li>
               <li>
-                <a href="#banners" class="sidebar-link"><span><img src="/images/icons/banners.svg" alt="banners"></span><span class="sidebar-subpages">Banners</span></a>
+                <a href="#banners" class="sidebar-link"><span class="icon-banners"></span><span class="sidebar-subpages">Banners</span></a>
               </li>
               <li>
-                <a href="#personaldata" class="sidebar-link"><span><img src="/images/icons/personaldata.svg" alt="personal data"></span><span class="sidebar-subpages">Personal data</span></a>
+                <a href="#personaldata" class="sidebar-link"><span class="icon-personaldata"></span><span class="sidebar-subpages">Personal data</span></a>
               </li>
               <li>
-                <a href="#payout" class="sidebar-link"><span><img src="/images/icons/payout.svg" height="16" width="18" alt="payout"></span><span class="sidebar-subpages">Payout</span></a>
+                <a href="#payout" class="sidebar-link"><span class="icon-payout"></span><span class="sidebar-subpages">Payout</span></a>
               </li>
               <li>
-                <a href="#postback" class="sidebar-link"><span><img src="/images/icons/postback.svg" alt="post back"></span><span class="sidebar-subpages">Post back</span></a>
+                <a href="#postback" class="sidebar-link"><span class="icon-postback"></span><span class="sidebar-subpages">Post back</span></a>
               </li>
             </ul>
           </div>
@@ -80,26 +80,26 @@
 
     <!-- MAIN CONTENT -->
 
-    <section class="main-content">
+    <section class="main-content flex-column">
 
     <!-- GENERAL STATISTIC (SUBPAGES) -->
 
-    <div class="general-statistic active">
+    <div class="general-statistic active center">
       <div class="page-title">
         <h2>GENERAL STATISTIC</h2>
-      </div>
+      </div><hr>
       <div class="gs-tab-one">
         <table>
           <tbody>
             <tr>
               <td class="forty">16.05.2016</td>
               <td class="forty">16.05.2016</td>
-              <td><a href="#"><img src="/images/icons/calendar.svg" height="13" width="13" alt="calendar"></a></td>
-              <td class="orange"><a href="#"><img src="/images/icons/refresh.svg" height="17" width="16" alt="refresh"></a></td>
+              <td><a href="#"><span class="icon-calendar"></span></a></td>
+              <td class="orange"><a href="#"><span class="icon-refresh"></span></a></td>
             </tr>
           </tbody>
-        </table><hr>
-      </div>
+        </table>
+      </div><hr>
       <div class="gs-tab-two">
         <table>
           <tbody>
@@ -123,83 +123,119 @@
       </div>
     </div>
 
-      <!-- GENERAL STATISTIC LINKS (SUBPAGES) -->
+    <!-- GENERAL STATISTIC LINKS (SUBPAGES) -->
 
-      <div class="gs-links active">
-        <div class="page-title">
-          <h2>LINKS</h2>
-        </div>
-        <div class="button-add">
-          <a href="#" class="btn btn-add">+ add new</a>
-        </div><hr>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Home page</div>
-          <div class="link-addres">http://www.homepage.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Currently offer</div>
-          <div class="link-addres">http://www.currently.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Blur pix</div>
-          <div class="link-addres">http://www.blurpix.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Your Site</div>
-          <div class="link-addres">http://www.yoursite.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Google</div>
-          <div class="link-addres">http://www.google.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Facebook</div>
-          <div class="link-addres">http://www.facebook.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Dashboard</div>
-          <div class="link-addres">http://www.dashboard.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Blurax</div>
-          <div class="link-addres">http://www.blurax.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Pice of Wine</div>
-          <div class="link-addres">http://www.piceofwine.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <a href="#"><div class="flex-row center">
-          <div class="link-name">Twitter</div>
-          <div class="link-addres">http://www.twitter.com</div>
-          <div class="link-icons"><span><img src="/images/icons/links.svg" alt="links"></span><span><img src="/images/icons/trash.svg" alt="trash"></span></div>
-        </div></a>
-        <div class="button-add">
-            <a href="#" class="btn btn-add">+ add new</a>
-        </div>
+    <div class="gs-links active center">
+      <div class="page-title">
+        <h2>LINKS</h2>
+      </div><hr>
+      <div class="button-add">
+        <a href="#" class="btn btn-add">+ add new</a>
       </div>
-    </section>
-      <!-- DETAILS (SUBPAGES) -->
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Home page</div>
+        <div class="link-addres">http://www.homepage.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Currently offer</div>
+        <div class="link-addres">http://www.currently.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Blur pix</div>
+        <div class="link-addres">http://www.blurpix.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Your Site</div>
+        <div class="link-addres">http://www.yoursite.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Google</div>
+        <div class="link-addres">http://www.google.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Facebook</div>
+        <div class="link-addres">http://www.facebook.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Dashboard</div>
+        <div class="link-addres">http://www.dashboard.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Blurax</div>
+        <div class="link-addres">http://www.blurax.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Pice of Wine</div>
+        <div class="link-addres">http://www.piceofwine.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <a href="#"><div class="flex-row center">
+        <div class="link-name">Twitter</div>
+        <div class="link-addres">http://www.twitter.com</div>
+        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
+      </div></a>
+      <div class="button-add">
+          <a href="#" class="btn btn-add">+ add new</a>
+      </div>
+    </div>
+
+    <!-- DETAILS (SUBPAGES) -->
+
+    <div class="details subpage-off">
+      <div class="page-title">
+        <h2>DETAILS</h2>
+      </div><hr>
+    </div>
 
       <!-- LINKS (SUBPAGES) -->
 
+      <div class="links subpage-off">
+        <div class="page-title">
+          <h2>LINKS</h2>
+        </div><hr>
+      </div>
+
       <!-- BANNERS(SUBPAGES) -->
+
+      <div class="banners subpage-off">
+        <div class="page-title">
+          <h2>BANNERS</h2>
+        </div><hr>
+      </div>
 
       <!-- PERSONAL DATA (SUBPAGES) -->
 
+      <div class="personal-data subpage-off">
+        <div class="page-title">
+          <h2>PERSONAL DATA</h2>
+        </div><hr>
+      </div>
+
       <!-- PAYOUT (SUBPAGES) -->
+
+      <div class="payout subpage-off">
+        <div class="page-title">
+          <h2>PAYOUT</h2>
+        </div><hr>
+      </div>
 
       <!-- POSTBACK (SUBPAGES) -->
 
-    
+      <div class="postback subpage-off">
+        <div class="page-title">
+          <h2>POSTBACK</h2>
+        </div><hr>
+      </div>
+
+    </section>
     </div>
   </body>
 </html>

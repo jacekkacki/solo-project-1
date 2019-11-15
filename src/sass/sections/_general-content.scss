@@ -1,23 +1,34 @@
 .general-statistic {
-  margin-top: 60px;
-  margin-left: 270px;
-  margin-right: 20px;
-  width: calc(100% - 290px);
+  flex: 1;
   background-color: $light-color;
+  margin-bottom: 20px;
+  border: 1px solid red;
 }
 
-.general-statistic .page-title h2 {
+.page-title h2 {
   margin: 20px 0 0 20px;
-  padding-top: 20px;
+  color: $grey-color;
+}
+
+.general-statistic .gs-tab-one .icon-calendar:before {
+  content: '\0048';
+  font-size: $basic-font-size;
+}
+
+.general-statistic .gs-tab-one .icon-refresh:before {
+  content: '\0058';
+  font-size: $basic-font-size;
+  color: $light-color;
 }
 
 .general-statistic .gs-tab-one table {
   height: 30px;
   width: 400px;
   text-align: center;
-  margin: 30px auto;
-  font-size: 18px;
-  border: 1px solid;
+  margin: 40px auto;
+  font-size: $basic-font-size;
+  font-weight: $font-weight-semi-bold;
+  border: 1px solid $grey-color;
 
   td.forty {
     width: 40%;
@@ -31,11 +42,12 @@
 .general-statistic .gs-tab-two table {
   height: 50px;
   width: 600px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $grey-color;
   text-align: left;
   margin: 30px auto;
-  font-size: 18px;
-  
+  font-size: $basic-font-size;
+  font-weight: $font-weight-semi-bold;
+
   .forty td {
     width: 40%;
   }
@@ -47,13 +59,9 @@
 }
 
 .gs-links {
-  margin-top: 20px;
-  margin-left: 270px;
-  margin-right: 20px;
-  padding: 50px 20px;
-  width: calc(100% - 290px);
   flex: 1;
   background-color: $light-color;
+  border: 1px solid red;
 
   a {
     text-decoration: none;
@@ -62,6 +70,7 @@
 
   hr {
     margin-bottom: 40px;
+    color: $grey-color;
   }
 }
 
@@ -75,9 +84,21 @@
   }
 }
 
-.flex-row {
-  font-size: 18px;
+.gs-links .link-icons .icon-links:before {
+  content: '\004c';
+  font-size: $basic-font-size;
+  color: $notification-color;
+}
+
+.gs-links .link-icons .icon-trash:before {
+  content: '\005a';
+  font-size: $basic-font-size;
+}
+
+.gs-links .flex-row {
+  font-size: $basic-font-size;
   font-weight: 500;
+  height: 40px;
   max-width: 600px;
   margin-left: 270px;
   border-bottom: 1px solid;
@@ -85,7 +106,12 @@
 
   &:hover {
     background-color: $basic-color;
+    font-weight: $font-weight-semi-bold;
     transform: $transition;
+
+    .link-icons span {
+      opacity: 1;
+    }
   }
 }
 
@@ -106,13 +132,11 @@
   max-width: 100px;
   text-align: left;
 
-  img {
-    height: 16px;
-    width: 18px;
+  span {
+    font-size: $basic-font-size;
     margin: 0 10px;
-    opacity: 1;
+    opacity: 0;
   }
-
 }
 
 .center {

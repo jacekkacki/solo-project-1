@@ -1,5 +1,4 @@
 .sidebar {
-  /*display: flex;*/
   flex: 250px;
   background: $dark-color;
   height: 100vh;
@@ -7,48 +6,70 @@
   position: fixed;
 }
 
-.sidebar .logo {
+.sidebar .sidebar-logo {
   padding: 0 20px;
+}
+
+.sidebar .logo {
+  padding: 0 10px;
+}
+
+.sidebar .hamburger {
+  padding: 0 20px;
+}
+
+.sidebar .sidebar-menu {
+  border-bottom: 1px solid $grey-color;
 }
 
 .sidebar ul {
   margin-bottom: 20px;
-  border-bottom: 1px $light-color;
-}
-
-.sidebar .subpages img {
-  height: 16px;
-  width: 18px;
-  margin: 0 10px;
 }
 
 .sidebar .subpages li{
   display: block;
   margin-top: 10px;
-  min-height: 25px;
+  min-height: 30px;
   width: 100%;
 
   &:hover {
     background-color: $grey-color;
     transform: $transition;
+
+    a {
+      color: $light-color;
+      transform: $transition;
+    }
+
+    [class*='icon-'] {
+      color: $light-color;
+      transform: $transition;
+    }
   }
 }
 
 .sidebar .subpages a {
   text-decoration: none;
-  color: $basic-color;
-  font-size: 18px;
+  color: $grey-color;
+  font-size: $basic-font-size;
+}
 
-  &:hover {
-    color: $light-color;
-    transform: $transition;
-  }
+.sidebar .subpages [class*='icon-'] {
+  font-size: $basic-font-size;
+  margin-right: 20px;
+  color: $grey-color;
+  margin-top: 10px;
+}
+
+.sidebar .subpages span {
+  margin: 10px 10px;
+  align-items: center;
 }
 
 .sidebar .managers {
   position: absolute;
-  top: 55%;
-  transform: translateY(-55%);
+  top: 60%;
+  transform: translateY(-60%);
   padding-left: 10px;
 
   .manager-title h3 {
@@ -60,7 +81,7 @@
   .manager-foto a {
     display: block;
     text-decoration: none;
-    font-size: 16px;
+    font-size: $basic-font-size;
     color: #3498db;
 
     span {

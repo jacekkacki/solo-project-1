@@ -23,13 +23,27 @@
         padding-right: 20px;
         color: $dark-color;
       }
-
-      img {
-        margin: 0 10px;
-        height: 19px;
-        width: 19px;
-      }
     }
   }
+}
+
+.topbar [class*='icon-'] {
+  font-size: $basic-font-size;
+  margin: 0 10px;
+  color: $dark-color;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification .orange-dot {
+  position: absolute;
+  background-color: $notification-color;
+  top: 0;
+  right: 29px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
