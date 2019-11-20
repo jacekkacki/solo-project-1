@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Administration panel</title>
-  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css" />
   <link rel="stylesheet" href="css/style.css">
@@ -27,7 +27,7 @@
             <a href="#" class="notification"><span class="icon-notification"></span><span class="orange-dot"></span></a>
           </li>
           <li>
-            <a href="#"><span class="icon-wallet"></span><span>&#36&nbsp1,500.00</span><span class="icon-arrow-down"></span></a>
+            <a href="#"><span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span></a>
           </li>
         </ul>
       </section>
@@ -35,207 +35,153 @@
       <!-- SIDEBAR -->
 
       <section class="sidebar">
-      <div class="flex-column">
-        <div class="col-12 sidebar-menu">
-          <div class="sidebar-logo">
-            <a href="#"><span><img class="logo" src="/images/logo.png" alt="logo"></span></a>
-            <a href="#"><span><img class="hamburger" src="/images/hamburger.png" alt="hamburger"></span></a>
-          </div>
-          <div class="col-12 subpages">
-            <ul>
-              <li>
-                <a href="#general" class="sidebar-link active"><span class="icon-general"></span><span class="sidebar-subpages">General</span></a>
-              </li>
-              <li>
-                <a href="#details" class="sidebar-link"><span class="icon-details"></span><span class="sidebar-subpages">Details</span></a>
-              </li>
-              <li>
-                <a href="#links" class="sidebar-link"><span class="icon-links"></span><span class="sidebar-subpages">Links</span></a>
-              </li>
-              <li>
-                <a href="#banners" class="sidebar-link"><span class="icon-banners"></span><span class="sidebar-subpages">Banners</span></a>
-              </li>
-              <li>
-                <a href="#personaldata" class="sidebar-link"><span class="icon-personaldata"></span><span class="sidebar-subpages">Personal data</span></a>
-              </li>
-              <li>
-                <a href="#payout" class="sidebar-link"><span class="icon-payout"></span><span class="sidebar-subpages">Payout</span></a>
-              </li>
-              <li>
-                <a href="#postback" class="sidebar-link"><span class="icon-postback"></span><span class="sidebar-subpages">Post back</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="managers">
-            <div class="col-12 manager-title">
-              <h3>YOUR  MANAGER</h3>
+        <div class="flex-column">
+          <div class="col-12 sidebar-menu">
+            <div class="sidebar-logo">
+              <span><img class="logo" src="/images/logo.png" alt="logo"></span>
+              <a href="#"><span class="hamburger"></span></a>
             </div>
-            <div class="manager-foto">
-              <a href="#"><span><img src="/images/manager.png" alt="manager"></span><span>Mikhael E.</span></a>
+            <div class="col-12 subpages">
+              <ul>
+                <li>
+                  <a href="#general" class="sidebar-link active"><span class="icon-general"></span><span class="sidebar-subpages">General</span></a>
+                </li>
+                <li>
+                  <a href="#details" class="sidebar-link"><span class="icon-details"></span><span class="sidebar-subpages">Details</span></a>
+                </li>
+                <li>
+                  <a href="#links" class="sidebar-link"><span class="icon-links"></span><span class="sidebar-subpages">Links</span></a>
+                </li>
+                <li>
+                  <a href="#banners" class="sidebar-link"><span class="icon-banners"></span><span class="sidebar-subpages">Banners</span></a>
+                </li>
+                <li>
+                  <a href="#personaldata" class="sidebar-link"><span class="icon-personaldata"></span><span class="sidebar-subpages">Personal data</span></a>
+                </li>
+                <li>
+                  <a href="#payout" class="sidebar-link"><span class="icon-payout"></span><span class="sidebar-subpages">Payout</span></a>
+                </li>
+                <li>
+                  <a href="#postback" class="sidebar-link"><span class="icon-postback"></span><span class="sidebar-subpages">Post back</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="managers">
+              <div class="col-12 manager-title">
+                <h3>YOUR  MANAGER</h3>
+              </div>
+              <div class="manager-info">
+                <a href="#"><span><img class="manager-foto" src="/images/manager.png" alt="manager"></span><span class="green-dot"></span><span class=manager-name>Mikhael E.</span></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
-    <!-- MAIN CONTENT -->
+      <!-- MAIN CONTENT -->
 
-    <section class="main-content flex-column">
+      <main class="main-content flex-column">
 
-    <!-- GENERAL STATISTIC (SUBPAGES) -->
+        <!-- GENERAL STATISTIC (SECTION) -->
 
-    <div class="general-statistic active center">
-      <div class="page-title">
-        <h2>GENERAL STATISTIC</h2>
-      </div><hr>
-      <div class="gs-tab-one">
-        <table>
-          <tbody>
-            <tr>
-              <td class="forty">16.05.2016</td>
-              <td class="forty">16.05.2016</td>
-              <td><a href="#"><span class="icon-calendar"></span></a></td>
-              <td class="orange"><a href="#"><span class="icon-refresh"></span></a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div><hr>
-      <div class="gs-tab-two">
-        <table>
-          <tbody>
-            <tr>
-              <td class="forty">Visit Signups</td>
-              <td>124</td>
-              <td class="forty">Net deposit</td>
-              <td>564</td>
-            </tr>
-            <tr>
-              <td class="forty">FTD</td>
-              <td >445</td>
-              <td class="forty">Turn over</td>
-              <td>432</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="general-chart">
-        <img src="images/chart.png" alt="general chart">
-      </div>
+        <section class="general-statistic active center">
+          <div class="page-title">
+            <h2>GENERAL STATISTIC</h2>
+          </div>
+          <div class="flex-row center date-value">
+            <div class="start-date"><input type="date" id="start" name="first-date" value="2016-05-16"></div>
+            <div class="end-date"><input type="date" id="end" name="second-date" value="2016-05-16"></div>
+            <a href="#"><span class="icon-calendar"></span></a>
+            <a href="#"><span class="icon-refresh orange"></span></a>
+          </div>
+          <div class="gs-tab-two">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="forty">Visit Signups</td>
+                  <td>124</td>
+                  <td class="forty">Net deposit</td>
+                  <td>564</td>
+                </tr>
+                <tr>
+                  <td class="forty">FTD</td>
+                  <td >445</td>
+                  <td class="forty">Turn over</td>
+                  <td>432</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="general-chart">
+            <img src="images/chart.png" alt="general chart">
+          </div>
+        </section>
+
+        <!-- GENERAL STATISTIC LINKS (SECTION) -->
+        
+        <section class="general-links active center">
+            <div class="page-title">
+              <h2>LINKS</h2>
+            </div>
+            <div class="button-add">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Home page</div>
+              <div class="link-addres">http://www.homepage.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Currently offer</div>
+              <div class="link-addres">http://www.currently.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Blur pix</div>
+              <div class="link-addres">http://www.blurpix.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Your Site</div>
+              <div class="link-addres">http://www.yoursite.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Google</div>
+              <div class="link-addres">http://www.google.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Facebook</div>
+              <div class="link-addres">http://www.facebook.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Dashboard</div>
+              <div class="link-addres">http://www.dashboard.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Blurax</div>
+              <div class="link-addres">http://www.blurax.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Pice of Wine</div>
+              <div class="link-addres">http://www.piceofwine.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center">
+              <div class="link-name">Twitter</div>
+              <div class="link-addres">http://www.twitter.com</div>
+              <div class="link-icons"><a href="#"><span class="icon-links"></span><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="button-add">
+                <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+          </section>
+      </main>
     </div>
-
-    <!-- GENERAL STATISTIC LINKS (SUBPAGES) -->
-
-    <div class="gs-links active center">
-      <div class="page-title">
-        <h2>LINKS</h2>
-      </div><hr>
-      <div class="button-add">
-        <a href="#" class="btn btn-add">+ add new</a>
-      </div>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Home page</div>
-        <div class="link-addres">http://www.homepage.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Currently offer</div>
-        <div class="link-addres">http://www.currently.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Blur pix</div>
-        <div class="link-addres">http://www.blurpix.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Your Site</div>
-        <div class="link-addres">http://www.yoursite.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Google</div>
-        <div class="link-addres">http://www.google.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Facebook</div>
-        <div class="link-addres">http://www.facebook.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Dashboard</div>
-        <div class="link-addres">http://www.dashboard.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Blurax</div>
-        <div class="link-addres">http://www.blurax.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Pice of Wine</div>
-        <div class="link-addres">http://www.piceofwine.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <a href="#"><div class="flex-row center">
-        <div class="link-name">Twitter</div>
-        <div class="link-addres">http://www.twitter.com</div>
-        <div class="link-icons"><span class="icon-links"></span><span class="icon-trash"></span></div>
-      </div></a>
-      <div class="button-add">
-          <a href="#" class="btn btn-add">+ add new</a>
-      </div>
-    </div>
-
-    <!-- DETAILS (SUBPAGES) -->
-
-    <div class="details subpage-off">
-      <div class="page-title">
-        <h2>DETAILS</h2>
-      </div><hr>
-    </div>
-
-      <!-- LINKS (SUBPAGES) -->
-
-      <div class="links subpage-off">
-        <div class="page-title">
-          <h2>LINKS</h2>
-        </div><hr>
-      </div>
-
-      <!-- BANNERS(SUBPAGES) -->
-
-      <div class="banners subpage-off">
-        <div class="page-title">
-          <h2>BANNERS</h2>
-        </div><hr>
-      </div>
-
-      <!-- PERSONAL DATA (SUBPAGES) -->
-
-      <div class="personal-data subpage-off">
-        <div class="page-title">
-          <h2>PERSONAL DATA</h2>
-        </div><hr>
-      </div>
-
-      <!-- PAYOUT (SUBPAGES) -->
-
-      <div class="payout subpage-off">
-        <div class="page-title">
-          <h2>PAYOUT</h2>
-        </div><hr>
-      </div>
-
-      <!-- POSTBACK (SUBPAGES) -->
-
-      <div class="postback subpage-off">
-        <div class="page-title">
-          <h2>POSTBACK</h2>
-        </div><hr>
-      </div>
-
-    </section>
-    </div>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>

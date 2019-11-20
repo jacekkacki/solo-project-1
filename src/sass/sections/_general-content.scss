@@ -2,40 +2,38 @@
   flex: 1;
   background-color: $light-color;
   margin-bottom: 20px;
-  border: 1px solid red;
 }
 
-.page-title h2 {
-  margin: 20px 0 0 20px;
-  color: $grey-color;
-}
-
-.general-statistic .gs-tab-one .icon-calendar:before {
-  content: '\0048';
-  font-size: $basic-font-size;
-}
-
-.general-statistic .gs-tab-one .icon-refresh:before {
-  content: '\0058';
-  font-size: $basic-font-size;
-  color: $light-color;
-}
-
-.general-statistic .gs-tab-one table {
+.general-statistic .date-value {
   height: 30px;
-  width: 400px;
-  text-align: center;
+  width: 300px;
+  text-align: left;
   margin: 40px auto;
   font-size: $basic-font-size;
   font-weight: $font-weight-semi-bold;
-  border: 1px solid $grey-color;
 
-  td.forty {
-    width: 40%;
+  .icon-calendar:before {
+    content: '\0048';
+    font-size: $basic-font-size;
+    margin-top: 5px;
   }
 
-  td.orange {
+  .orange {
     background-color: orange;
+  }
+
+  .icon-refresh:before {
+    content: '\0058';
+    font-size: $basic-font-size;
+    color: $light-color;
+    margin-top: 5px;
+  }
+
+  span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 5px;
   }
 }
 
@@ -53,27 +51,6 @@
   }
 }
 
-.general-chart {
-  text-align: center;
-  margin: 10px 10px;
-}
-
-.gs-links {
-  flex: 1;
-  background-color: $light-color;
-  border: 1px solid red;
-
-  a {
-    text-decoration: none;
-    color: $dark-color;
-  }
-
-  hr {
-    margin-bottom: 40px;
-    color: $grey-color;
-  }
-}
-
 .button-add {
   text-align: center;
   margin: 30px auto;
@@ -84,22 +61,22 @@
   }
 }
 
-.gs-links .link-icons .icon-links:before {
+.general-links .link-icons .icon-links:before {
   content: '\004c';
   font-size: $basic-font-size;
   color: $notification-color;
 }
 
-.gs-links .link-icons .icon-trash:before {
+.general-links .link-icons .icon-trash:before {
   content: '\005a';
   font-size: $basic-font-size;
 }
 
-.gs-links .flex-row {
+.general-links .flex-row {
   font-size: $basic-font-size;
   font-weight: 500;
   height: 40px;
-  max-width: 600px;
+  max-width: 550px;
   margin-left: 270px;
   border-bottom: 1px solid;
   align-items: center;
@@ -117,7 +94,7 @@
 
 .flex-row .link-name {
   flex: 1;
-  max-width: 250px;
+  max-width: 200px;
   text-align: left;
 }
 

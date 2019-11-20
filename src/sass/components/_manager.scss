@@ -1,28 +1,50 @@
-/*.manager {
+.sidebar .managers {
   position: absolute;
-  display: block;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 65%;
+  transform: translateY(-65%);
   padding-left: 10px;
 
-  a {
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    color: #3498db;
+  .manager-title h3 {
+    margin: 20px 0 0 20px;
+    padding: 20px 0;
+    color: $basic-color;
+  }
+}
 
-    &:hover {
-      color: $notification-color;
-      background-color: dark;
-    } 
+.sidebar .managers .manager-info a {
 
-    span {
-      padding-left: 10px;
-      vertical-align: middle;
-    }
+  display: block;
+  text-decoration: none;
+  font-size: $paragraph-font-size;
+  color: #3498db;
+  
+  &:hover {
+    color: $notification-color;
+    transform: $transition;
   }
 
-  h3 {
-    color: $sidebar-item-color;
+  .manager-foto {
+    padding: 0 10px;
   }
-} */
+}
+
+.sidebar .managers .manager-info {
+  position: relative;
+
+  .manager-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 10px;
+  }
+
+  .green-dot {
+    position: absolute;
+    background-color: $green-dot-color;
+    top: 3px;
+    left: 42px;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+  }
+}

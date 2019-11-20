@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: $basic-font;
+  font-size: 14px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,13 +16,12 @@ body {
 
 .flex-container {
   display: flex;
-  height: auto;
-  width: 100wh;
   background-color: $basic-color;
 }
 
 .main-content {
-  margin: 60px 20px 20px 270px;
+  width: 100wh;
+  margin: 60px 20px 20px 240px;
   background-color: $basic-color;
 }
 

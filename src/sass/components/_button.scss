@@ -25,3 +25,40 @@
     color: $light-color;
   }
 }
+
+/*Button Hamburger*/
+.hamburger {
+  width: 25px;
+  height: 25px;
+  left: 30px;
+  bottom: 20px;
+  border: 0;
+  border-top: 5px solid $basic-color;
+  background: transparent;
+  padding: 0 10px;
+  position: relative;
+  
+  &:hover {
+    border-color: $light-color;
+    transform: $transition;
+  }
+}
+
+.hamburger::before, .hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid $basic-color;
+  transform: translateY(10px);
+}
+
+.hamburger:hover::before, .hamburger:hover::after {
+  border-color: $light-color;
+  transform: $transition;
+}
+
+.hamburger::after {
+  transform: translateY(24px);
+}
