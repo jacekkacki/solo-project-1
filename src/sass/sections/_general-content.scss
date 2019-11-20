@@ -4,6 +4,11 @@
   margin-bottom: 20px;
 }
 
+.main-content.wide {
+  margin: 60px 20px 20px 90px;
+  transition: $transition;
+}
+
 .general-statistic .date-value {
   height: 30px;
   width: 300px;
@@ -12,10 +17,21 @@
   font-size: $basic-font-size;
   font-weight: $font-weight-semi-bold;
 
+  @include mobile {
+    font-size: $mobile-font-size;
+    width: 200px;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
   .icon-calendar:before {
     content: '\0048';
     font-size: $basic-font-size;
     margin-top: 5px;
+
+    @include mobile {
+      font-size: $mobile-font-size;
+    }
   }
 
   .orange {
@@ -27,17 +43,26 @@
     font-size: $basic-font-size;
     color: $light-color;
     margin-top: 5px;
+
+    @include mobile {
+      font-size: $mobile-font-size;
+    }
   }
 
   span {
     display: block;
     width: 30px;
     height: 30px;
-    margin: 0 10px 0 5px;
+    margin: 0 15px 0 5px;
+
+    @include mobile {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
-.general-statistic .gs-tab-two table {
+.general-statistic .general-tab table {
   height: 50px;
   width: 600px;
   border-bottom: 1px solid $grey-color;
@@ -45,6 +70,14 @@
   margin: 30px auto;
   font-size: $basic-font-size;
   font-weight: $font-weight-semi-bold;
+
+  @include mobile {
+    width: 400px;
+    font-size: $mobile-font-size;
+    font-weight: $font-weight-light;
+    margin: 30px 10px;
+    justify-items: left;
+  }
 
   .forty td {
     width: 40%;
@@ -65,11 +98,19 @@
   content: '\004c';
   font-size: $basic-font-size;
   color: $notification-color;
+
+  @include mobile {
+    font-size: $mobile-font-size;
+  }
 }
 
 .general-links .link-icons .icon-trash:before {
   content: '\005a';
   font-size: $basic-font-size;
+
+  @include mobile {
+    font-size: $mobile-font-size;
+  }
 }
 
 .general-links .flex-row {
@@ -90,24 +131,46 @@
       opacity: 1;
     }
   }
+
+  @include mobile {
+    flex-direction: row;
+    margin-bottom: 40px;
+    max-width: 290px;
+    margin-left: 10px;
+    font-size: $mobile-font-size;
+    justify-items: left;
+  }
 }
 
 .flex-row .link-name {
   flex: 1;
   max-width: 200px;
   text-align: left;
+
+  @include mobile {
+    max-width: 90px;
+  }
 }
 
 .flex-row .link-addres {
   flex: 1;
   max-width: 250px;
   text-align: left;
+
+  @include mobile {
+    max-width: 100px;
+  }
 }
 
 .flex-row .link-icons {
   flex: 1;
   max-width: 100px;
   text-align: left;
+
+  @include mobile {
+    max-width: 100px;
+    margin-left: 10px;
+  }
 
   span {
     font-size: $basic-font-size;

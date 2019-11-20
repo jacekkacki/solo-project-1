@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+/*Media*/
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 html {
   font-family: $basic-font;
   font-size: 14px;
@@ -20,29 +27,39 @@ body {
 }
 
 .main-content {
-  width: 100wh;
   margin: 60px 20px 20px 240px;
   background-color: $basic-color;
+  
+  @include mobile {
+    margin: 70px 20px 20px 90px;
+  }
 }
 
 .flex-row {
   display: flex;
   width: 100%;
   flex-direction: row;
+
+  @include mobile {
+    margin-bottom: 40px;
+    flex-direction: column;
+    margin-left: 90px;
+    font-size: $mobile-font-size;
+    justify-items: left;
+  }
 }
 
 .flex-column {
   display: flex;
   width: 100%;
   flex-direction: column;
-}
 
-hr {
-  color: $grey-color;
-}
-
-.subpage-off {
-  display: none;
+  @include mobile {
+    margin-bottom: 40px;
+    margin-left: 0px;
+    font-size: $mobile-font-size;
+    justify-items: left;
+  }
 }
 
 .col-1 {flex: 8.333%;}

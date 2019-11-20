@@ -1,9 +1,38 @@
 .sidebar {
-  flex: 250px;
+  flex: 220px;
   background: $dark-color;
   height: 100vh;
   width: 220px;
   position: fixed;
+  order: 1;
+}
+
+/*Hidden sidebar elements*/
+.sidebar.hidden {
+  width: 70px;
+  transition: $transition;
+}
+
+.hidden .logo,
+.hidden .sidebar-subpages,
+.hidden .manager-title,
+.hidden .manager-name {
+  display: none;
+  transition: $transition;
+}
+
+.hidden .manager-foto,
+.hidden .green-dot {
+  margin-left: -15px;
+  transition: $transition;
+}
+
+.hidden .hamburger {
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+  margin-right: 10px;
+  transition: $transition;
 }
 
 .sidebar .sidebar-logo {
@@ -75,9 +104,3 @@
   margin: 10px 20px;
   align-items: center;
 }
-
-/*.sidebar .sidebar-menu .subpages .sidebar-link.active {
-  color: $light-color;
-  background-color: $grey-color;
-  border-left: 3px solid $notification-color;
-}*/
