@@ -1,3 +1,7 @@
 .links {
   margin: 0 20px 20px 20px;
+
+  @include mobile {
+    margin: 0 10px 10px 5px;
+  }
 }

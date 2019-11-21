@@ -5,6 +5,11 @@
   width: 220px;
   position: fixed;
   order: 1;
+
+  @include mobile {
+    width: 100%;
+    justify-items: center;
+  }
 }
 
 /*Hidden sidebar elements*/
@@ -41,6 +46,8 @@
 
 .sidebar .hamburger {
   padding: 0 20px;
+  right: 10%;
+  transform: translateX(-10%);
 }
 
 .sidebar .sidebar-menu {
@@ -103,4 +110,8 @@
 .sidebar .subpages span {
   margin: 10px 20px;
   align-items: center;
+
+  @include mobile {
+    margin: 10px 20px 10px 30px;
+  }
 }

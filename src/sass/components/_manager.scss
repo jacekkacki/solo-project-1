@@ -5,8 +5,8 @@
   padding-left: 10px;
 
   @include mobile {
-    top: 65%;
-    transform: translateY(65%);
+    top: 75%;
+    transform: translateY(-75%);
   }
 
   .manager-title h3 {
@@ -36,11 +36,20 @@
 .sidebar .managers .manager-info {
   position: relative;
 
+  @include mobile {
+    padding-right: 10px;
+  }
+
   .manager-name {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 10px;
+    padding-left: 5px;
+
+    @include mobile {
+      padding-left: 0;
+      font-size: $mobile-font-size;
+    }
   }
 
   .green-dot {

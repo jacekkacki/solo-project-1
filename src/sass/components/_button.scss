@@ -5,7 +5,7 @@
   margin: 10px auto;
   padding: 16px;
   border-radius: 5px;
-  font-family: $brand-font;
+  font-family: $basic-font;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -15,6 +15,14 @@
   background-position: 100% 0;
   background-size: 300%;
   transition: $transition;
+
+  @include mobile {
+    min-width: 80px;
+    margin: 5px auto;
+    padding: 10px;
+    font-family: $basic-font;
+    font-size: $mobile-font-size;
+  }
 }
 
 .btn-add {
