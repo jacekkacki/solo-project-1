@@ -15,14 +15,6 @@
   background-position: 100% 0;
   background-size: 300%;
   transition: $transition;
-
-  @include mobile {
-    min-width: 80px;
-    margin: 5px auto;
-    padding: 10px;
-    font-family: $basic-font;
-    font-size: $mobile-font-size;
-  }
 }
 
 .btn-add {
@@ -35,38 +27,18 @@
 }
 
 /*Button Hamburger*/
+
 .hamburger {
-  width: 25px;
-  height: 25px;
-  left: 30px;
-  bottom: 20px;
-  border: 0;
-  border-top: 5px solid $basic-color;
-  background: transparent;
-  padding: 0 10px;
-  position: relative;
-  
-  &:hover {
-    border-color: $light-color;
-    transform: $transition;
+  /*left: 30px;
+  bottom: 20px; */
+
+  i.fas.fa-bars {
+    color: $light-color;
+    font-size: 3rem;
+    padding-left: 90%;
   }
-}
 
-.hamburger::before, .hamburger::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-top: 5px solid $basic-color;
-  transform: translateY(10px);
-}
-
-.hamburger:hover::before, .hamburger:hover::after {
-  border-color: $light-color;
-  transform: $transition;
-}
-
-.hamburger::after {
-  transform: translateY(24px);
+  span {
+    top: -10px;
+  }
 }

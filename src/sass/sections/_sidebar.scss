@@ -1,20 +1,15 @@
-.sidebar {
+/*.sidebar {
   flex: 220px;
   background: $dark-color;
-  height: 100vh;
+  height: 100%;
   width: 220px;
   position: fixed;
   order: 1;
-
-  @include mobile {
-    width: 100%;
-    justify-items: center;
-  }
-}
+}*/
 
 /*Hidden sidebar elements*/
 .sidebar.hidden {
-  width: 70px;
+  width: 100px;
   transition: $transition;
 }
 
@@ -36,27 +31,30 @@
   left: 0;
   bottom: 0;
   margin-top: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
   transition: $transition;
+
+  i.fas.fa-bars {
+    padding-left: 0;
+  }
 }
 
 .sidebar .sidebar-logo {
-  padding: 10px 20px;
+  padding: 30px 20px 10px 20px;
 }
 
 .sidebar .hamburger {
-  padding: 0 20px;
-  right: 10%;
-  transform: translateX(-10%);
+  padding-left: 10%;
+  margin-top: 0; 
 }
 
-.sidebar .sidebar-menu {
+.sidebar .subpages {
   border-bottom: 1px solid $grey-color;
 }
 
 .sidebar ul {
   margin-bottom: 20px;
-  padding: 0;
+  padding: 25px 0;
 }
 
 .sidebar .subpages li{
@@ -64,7 +62,6 @@
   margin-top: 10px;
   height: 30px;
   width: 100%;
-
   
   .active {
     display: block;
@@ -107,11 +104,7 @@
   margin-top: 10px;
 }
 
-.sidebar .subpages span {
-  margin: 10px 20px;
+.sidebar.subpages span {
+  margin: 10px 10px;
   align-items: center;
-
-  @include mobile {
-    margin: 10px 20px 10px 30px;
-  }
 }

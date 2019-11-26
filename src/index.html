@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
@@ -16,20 +17,22 @@
       <!-- TOPBAR -->
 
       <section class="topbar">
-        <ul>
-          <li>
-            <a href="#"><span class="icon-quit"></span></a>
-          </li>
-          <li>
-            <a href="#"><span class="icon-profile"></span><span>Leonardo Dicaprio</span></a>
-          </li>
-          <li>
-            <a href="#" class="notification"><span class="icon-notification"></span><span class="orange-dot"></span></a>
-          </li>
-          <li>
-            <a href="#"><span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span></a>
-          </li>
-        </ul>
+        <div class="top-menu">
+          <ul>
+            <li>
+              <a href="#"><span class="icon-quit"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-profile"></span><span>Leonardo Dicaprio</span></a>
+            </li>
+            <li>
+              <a href="#" class="notification"><span class="icon-notification"></span><span class="orange-dot"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span></a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- SIDEBAR -->
@@ -37,9 +40,9 @@
       <section class="sidebar">
         <div class="flex-column">
           <div class="col-12 sidebar-menu">
-            <div class="sidebar-logo">
+            <div class="sidebar-logo row">
               <span><img class="logo" src="/images/logo.png" alt="logo"></span>
-              <a href="#"><span class="hamburger"></span></a>
+              <a href="#"><span class="hamburger"><i class="fas fa-bars"></i></span></a>
             </div>
             <div class="col-12 subpages">
               <ul>
@@ -94,26 +97,26 @@
             <a href="#"><span class="icon-calendar"></span></a>
             <a href="#"><span class="icon-refresh orange"></span></a>
           </div>
-          <div class="general-tab">
-            <table>
-              <tbody>
-                <tr>
-                  <td class="forty">Visit Signups</td>
-                  <td>124</td>
-                  <td class="forty">Net deposit</td>
-                  <td>564</td>
-                </tr>
-                <tr>
-                  <td class="forty">FTD</td>
-                  <td >445</td>
-                  <td class="forty">Turn over</td>
-                  <td>432</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col-12 general-tab center">
+            <div class="flex-row center row-one">
+              <div class="col-1"></div>
+              <div class="col-4">Visit Signups</div>
+              <div class="col-1">124</div>
+              <div class="col-4">Net deposit</div>
+              <div class="col-1">564</div>
+              <div class="col-1"></div>
+            </div>
+            <div class="flex-row center row-two">
+              <div class="col-1"></div>
+              <div class="col-4">FTD</div>
+              <div class="col-1">445</div>
+              <div class="col-4">Turn over</div>
+              <div class="col-1">432</div>
+              <div class="col-1"></div>
+            </div>
           </div>
           <div class="general-chart">
-            <img src="images/chart.png" alt="general chart">
+            <img src="images/chart.png" alt="chart">
           </div>
         </section>
 
@@ -126,61 +129,61 @@
             <div class="button-add">
               <a href="#" class="btn btn-add">+ add new</a>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Home page</div>
               <div class="col-6 link-addres">http://www.homepage.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Currently offer</div>
               <div class="col-6 link-addres">http://www.currently.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Blur pix</div>
               <div class="col-6 link-addres">http://www.blurpix.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Your Site</div>
               <div class="col-6 link-addres">http://www.yoursite.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Google</div>
               <div class="col-6 link-addres">http://www.google.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Facebook</div>
               <div class="col-6 link-addres">http://www.facebook.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Dashboard</div>
               <div class="col-6 link-addres">http://www.dashboard.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Blurax</div>
               <div class="col-6 link-addres">http://www.blurax.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Pice of Wine</div>
               <div class="col-6 link-addres">http://www.piceofwine.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
             </div>
-            <div class="flex-row center">
+            <div class="flex-row center .page-link">
               <div class="col-4 link-name">Twitter</div>
               <div class="col-6 link-addres">http://www.twitter.com</div>
               <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>

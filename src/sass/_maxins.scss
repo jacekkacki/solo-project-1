@@ -1,6 +1,7 @@
-/*Media*/
-@mixin mobile {
-  @media (max-width: 768px) {
-    @content;
-  }
+@mixin sidebar {
+  flex: 1;
+  background: $dark-color;
+  height: 100%;
+  width: 220px;
+  position: fixed;
 }

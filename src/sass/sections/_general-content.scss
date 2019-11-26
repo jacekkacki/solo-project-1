@@ -2,6 +2,11 @@
   flex: 1;
   background-color: $light-color;
   margin-bottom: 20px;
+  order: 3;
+
+  .general-tab {
+    justify-items: center;
+  }
 }
 
 .main-content.wide {
@@ -14,76 +19,45 @@
   width: 500px;
   text-align: left;
   margin: 40px auto;
+  /*margin-left: 20px;*/
   font-size: $basic-font-size;
   font-weight: $font-weight-semi-bold;
-
-  @include mobile {
-    font-size: $mobile-font-size;
-    width: 200px;
-    flex-direction: row;
-    margin-left: 10px;
-  }
-
-  .icon-calendar:before {
-    content: '\0048';
-    font-size: $basic-font-size;
-    margin-top: 5px;
-    margin-left: 5px;
-
-    @include mobile {
-      font-size: $mobile-font-size;
-    }
-  }
-
-  .orange {
-    background-color: orange;
-  }
-
-  .icon-refresh:before {
-    content: '\0058';
-    font-size: $basic-font-size;
-    color: $light-color;
-    margin-top: 5px;
-    margin-left: 5px;
-
-    @include mobile {
-      font-size: $mobile-font-size;
-    }
-  }
-
-  span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 0 5px 0 5px;
-
-    @include mobile {
-      width: 20px;
-      height: 20px;
-    }
-  }
 }
 
-.general-statistic .general-tab table {
+.icon-calendar:before {
+  content: '\0048';
+  font-size: $basic-font-size;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.icon-refresh:before {
+  content: '\0058';
+  font-size: $basic-font-size;
+  color: $light-color;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.general-statistic span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 5px;
+}
+
+.general-statistic .general-tab .row-one, .row-two {
   height: 50px;
-  width: 600px;
+  width: 80%;
   border-bottom: 1px solid $grey-color;
   text-align: left;
-  margin: 30px auto;
+  margin: 10px auto;
   font-size: $basic-font-size;
   font-weight: $font-weight-semi-bold;
-
-  @include mobile {
-    width: 220px;
-    font-size: $mobile-font-size;
-    font-weight: $font-weight-light;
-    margin: 20px 10px;
-    justify-items: left;
-  }
-
-  .forty td {
-    width: 40%;
-  }
 }
 
 .center {

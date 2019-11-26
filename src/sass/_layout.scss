@@ -5,13 +5,65 @@
 
 html {
   font-family: $basic-font;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   background: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    width: 100% / 12 * $i;
+    flex: 0 0 width;
+    max-width: width;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-md-#{$i} {
+    width: 100% / 12 * $i;
+    flex: 0 0 width;
+    max-width: width;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-lg-#{$i} {
+    width: 100% / 12 * $i;
+    flex: 0 0 width;
+    max-width: width;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-xl-#{$i} {
+    width: 100% / 12 * $i;
+    flex: 0 0 width;
+    max-width: width;
+  }
 }
 
 .flex-container {
@@ -22,10 +74,6 @@ body {
 .main-content {
   margin: 50px 20px 20px 240px;
   background-color: $basic-color;
-  
-  @include mobile {
-    margin: 70px auto;
-  }
 }
 
 .flex-row {
@@ -33,28 +81,62 @@ body {
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-
-  @include mobile {
-    margin-bottom: 40px;
-    flex-direction: column;
-    margin-left: auto;
-    font-size: $mobile-font-size;
-    justify-items: left;
-  }
 }
 
 .flex-column {
   display: flex;
   width: 100%;
   flex-direction: column;
+}
 
-  @include mobile {
-    margin-bottom: 40px;
-    margin-left: 0;
-    font-size: $mobile-font-size;
-    justify-items: left;
+/*Media*/
+/*@media (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: $dark-color;
+    position: fixed;
+    order: 1;
+
+    .subpages span {
+      padding-left: 10px;
+    }
+  }
+
+  .topbar {
+    position: absolute;
+    left: 0px;
+    width: 75%;
+    margin: 0 0;
+    padding: 0 0;
+    top: 40%;
+    transform: translateY(40%);
+    z-index: 2;
+
+    ul li {
+      float: none;
+    }
   }
 }
+
+@media (min-width: 768px) {
+  .sidebar {
+    @include sidebar;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    @include sidebar;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebar {
+    @include sidebar;
+  }
+} */
 
 .col-1 {flex: 8.333%;}
 
