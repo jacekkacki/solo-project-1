@@ -11,27 +11,47 @@
     order: 1;
 
     .subpages span {
-      padding-left: 10px;
+      padding-left: 20px;
+      margin: 5px 5px;
     }
 
-    .sidebar .subpages a {
-      font-size: 4rem;
+    .subpages a {
+      font-size: 1.6rem;
+    }
+
+    .managers .manager-title h3 {
+      font-size: 1.6rem;
+    }
+
+    .managers .manager-info .manager-name {
+      font-size: 1.4rem;
     }
   }
 
-  .sidebar .subpages {
+  .sidebar.hidden {
+    height: 100%;
+
+    .topbar {
+      flex-direction: column;
+
+      ul li {
+        display: block;
+      }
+    }
+  }
+
+  .subpages {
     position: relative;
   }
 
   .topbar {
-    position: absolute;
+    position: fixed;
     left: 0px;
-    width: 700px;
-    height: 40px;
+    width: 100px;
+    height: 150px;
     margin: 0 0;
     padding: 10px 0;
-    top: 600px;
-    flex-direction: row-reverse;
+    top: calc(100vh - 150px);
     z-index: 2;
 
     span {
@@ -48,26 +68,117 @@
         float: none;
         padding: 5px 0;
         border-left: 1px solid;
-        display: inline-flex;
+        display: block;
+        z-index: 3;
       }
     }
     
     ul li a {
       text-decoration: none;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
       color: $dark-color;
+      font-size: 0.8rem;
     }
   }
 
+  .topbar [class*='icon-'] {
+    font-size: 1.4rem;
+    margin: 0 5px;
+    color: #000000;
+  }
+
+  
+  .notification {
+    position: relative;
+  }
+
+  .notification .orange-dot {
+    position: absolute;
+    background-color: $notification-color;
+    top: 0;
+    right: 10px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+  
+  .main-content {
+    margin: 100vh 20px 20px 0;
+    transition: $transition;
+  }
+
+  .main-content.wide {
+    margin: 0 20px 20px 110px;
+    transition: $transition;
+  }
+
+  .general-statistic .date-value {
+    text-align: left;
+    margin: 30px auto;
+    padding-left: 20px;
+    font-size: 0.8rem;
+    font-weight: $font-weight-light;
+  }
+
   .general-statistic .general-tab .row-one, .row-two {
-    height: 40px;
+    height: 30px;
     width: 80%;
     border-bottom: 1px solid $grey-color;
     text-align: left;
     margin: 10px auto;
-    font-size: $mobile-font-size;
+    font-size: 0.8rem;
     font-weight: $font-weight-light;
+  }
+
+  .page-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .general-statistic .general-chart img {
+    height: 350px;
+  }
+
+  .general-links .button-add .btn {
+    min-width: 80px;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: $basic-font;
+    font-size: 0.8rem;
+  }
+
+  .general-links .flex-row {
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 40px;
+    max-width: 330px;
+    /*min-width: max-content;*/
+    margin: 0 auto;
+    padding-left: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .flex-row .link-name {
+    max-width: 120px;
+    text-align: left;
+  }
+  
+  .flex-row .link-addres {
+    max-width: 150px;
+    text-align: left;
+  }
+  
+  .flex-row .link-icons {
+    max-width: 30px;
+    margin: 0 5px;
+    text-align: left;
+  
+    span {
+      font-size: $basic-font-size;
+      margin: 0 5px;
+      opacity: 0;
+    }
   }
 }
 

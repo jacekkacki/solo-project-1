@@ -24,7 +24,7 @@
   font-size: $basic-font-size;
   font-weight: $font-weight-medium;
   height: 40px;
-  max-width: 540px;
+  max-width: 530px;
   margin: 10px auto;
   border-bottom: 1px solid $dark-color;
   align-items: center;
@@ -51,7 +51,7 @@
 }
 
 .flex-row .link-icons {
-  min-width: 40px;
+  max-width: 40px;
   margin: 0 5px;
   text-align: left;
 
