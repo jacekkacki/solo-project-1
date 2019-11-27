@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Administration panel</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+    <div class="flex-container">
+
+      <!-- TOPBAR -->
+
+      <section class="topbar">
+        <div class="top-menu">
+          <ul>
+            <li>
+              <a href="#"><span class="icon-quit"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-profile"></span><span>Leonardo Dicaprio</span></a>
+            </li>
+            <li>
+              <a href="#" class="notification"><span class="icon-notification"></span><span class="orange-dot"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon-wallet"></span><span>$1,500.00</span><span class="icon-arrow-down"></span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SIDEBAR -->
+
+      <section class="sidebar">
+        <div class="flex-column">
+          <div class="col-12 sidebar-menu">
+            <div class="sidebar-logo row">
+              <span><img class="logo" src="/images/logo.png" alt="logo"></span>
+              <a href="#"><span class="hamburger"><i class="fas fa-bars"></i></span></a>
+            </div>
+            <div class="col-12 subpages">
+              <ul>
+                <li>
+                  <a href="#general" class="sidebar-link active"><span class="icon-general"></span><span class="sidebar-subpages">General</span></a>
+                </li>
+                <li>
+                  <a href="#details" class="sidebar-link"><span class="icon-details"></span><span class="sidebar-subpages">Details</span></a>
+                </li>
+                <li>
+                  <a href="#links" class="sidebar-link"><span class="icon-links"></span><span class="sidebar-subpages">Links</span></a>
+                </li>
+                <li>
+                  <a href="#banners" class="sidebar-link"><span class="icon-banners"></span><span class="sidebar-subpages">Banners</span></a>
+                </li>
+                <li>
+                  <a href="#personaldata" class="sidebar-link"><span class="icon-personaldata"></span><span class="sidebar-subpages">Personal data</span></a>
+                </li>
+                <li>
+                  <a href="#payout" class="sidebar-link"><span class="icon-payout"></span><span class="sidebar-subpages">Payout</span></a>
+                </li>
+                <li>
+                  <a href="#postback" class="sidebar-link"><span class="icon-postback"></span><span class="sidebar-subpages">Post back</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="managers">
+              <div class="col-12 manager-title">
+                <h3>YOUR  MANAGER</h3>
+              </div>
+              <div class="manager-info">
+                <a href="#"><span><img class="manager-foto" src="/images/manager.png" alt="manager"></span><span class="green-dot"></span><span class=manager-name>Mikhael E.</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content flex-column">
+
+        <!-- GENERAL STATISTIC (SECTION) -->
+
+        <section class="general-statistic active center">
+          <div class="page-title">
+            <h2>GENERAL STATISTIC</h2>
+          </div>
+          <div class="flex-row center date-value">
+            <div class="start-date"><input type="date" id="start" name="first-date" value="2016-05-16"></div>
+            <div class="end-date"><input type="date" id="end" name="second-date" value="2016-05-16"></div>
+            <a href="#"><span class="icon-calendar"></span></a>
+            <a href="#"><span class="icon-refresh orange"></span></a>
+          </div>
+          <div class="col-12 general-tab center">
+            <div class="flex-row center row-one">
+              <div class="col-1"></div>
+              <div class="col-4">Visit Signups</div>
+              <div class="col-1">124</div>
+              <div class="col-4">Net deposit</div>
+              <div class="col-1">564</div>
+              <div class="col-1"></div>
+            </div>
+            <div class="flex-row center row-two">
+              <div class="col-1"></div>
+              <div class="col-4">FTD</div>
+              <div class="col-1">445</div>
+              <div class="col-4">Turn over</div>
+              <div class="col-1">432</div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+          <div class="general-chart">
+            <img src="images/chart.png" alt="chart">
+          </div>
+        </section>
+
+        <!-- GENERAL STATISTIC LINKS (SECTION) -->
+        
+        <section class="general-links active center">
+            <div class="page-title">
+              <h2>LINKS</h2>
+            </div>
+            <div class="button-add">
+              <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Home page</div>
+              <div class="col-6 link-addres">http://www.homepage.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Currently offer</div>
+              <div class="col-6 link-addres">http://www.currently.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Blur pix</div>
+              <div class="col-6 link-addres">http://www.blurpix.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Your Site</div>
+              <div class="col-6 link-addres">http://www.yoursite.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Google</div>
+              <div class="col-6 link-addres">http://www.google.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Facebook</div>
+              <div class="col-6 link-addres">http://www.facebook.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Dashboard</div>
+              <div class="col-6 link-addres">http://www.dashboard.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Blurax</div>
+              <div class="col-6 link-addres">http://www.blurax.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Pice of Wine</div>
+              <div class="col-6 link-addres">http://www.piceofwine.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="flex-row center page-link">
+              <div class="col-4 link-name">Twitter</div>
+              <div class="col-6 link-addres">http://www.twitter.com</div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-links"></span></a></div>
+              <div class="col-1 link-icons"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <div class="button-add">
+                <a href="#" class="btn btn-add">+ add new</a>
+            </div>
+          </section>
+      </main>
+    </div>
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
